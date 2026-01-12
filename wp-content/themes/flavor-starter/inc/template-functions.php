@@ -275,6 +275,13 @@ function flavor_breadcrumbs(): void {
 }
 
 /**
+ * Breadcrumb alias (singular form)
+ */
+function flavor_breadcrumb(): void {
+    flavor_breadcrumbs();
+}
+
+/**
  * Reading time estimate
  */
 function flavor_reading_time(int $post_id = 0): string {

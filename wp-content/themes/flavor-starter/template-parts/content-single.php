@@ -56,7 +56,7 @@
         <!-- Share Buttons -->
         <div class="entry-share">
             <span class="entry-share__label"><?php esc_html_e('Share:', 'flavor-starter'); ?></span>
-            <?php flavor_social_share(); ?>
+            <?php flavor_share_buttons(); ?>
         </div>
     </footer>
 </article>
