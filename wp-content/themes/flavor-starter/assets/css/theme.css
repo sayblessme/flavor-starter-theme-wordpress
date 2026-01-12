@@ -975,12 +975,22 @@
     font-weight: var(--font-bold);
     color: var(--color-white);
     margin-bottom: var(--space-2);
+    /* Ограничение на 2 строки для выравнивания карточек */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.3;
+    min-height: calc(var(--text-xl) * 1.3 * 2); /* Высота для 2 строк */
 }
 
 .portfolio-card__category {
     font-size: var(--text-sm);
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: var(--space-4);
+    /* Фиксированная высота для выравнивания */
+    min-height: var(--text-sm);
+    line-height: 1.4;
 }
 
 .portfolio-card__actions {
