@@ -747,11 +747,17 @@ small {
 /* ==========================================================================
    ANIMATIONS
    ========================================================================== */
-/* Fade In */
+/* Fade In - visible by default, animate only with JS */
 .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+/* When JS is loaded, hide elements for animation */
+.js-loaded .fade-in:not(.is-visible) {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity var(--transition-slow), transform var(--transition-slow);
 }
 
 .fade-in.is-visible {
@@ -766,11 +772,16 @@ small {
 .stagger-4 { transition-delay: 0.4s; }
 .stagger-5 { transition-delay: 0.5s; }
 
-/* Scale */
+/* Scale - visible by default */
 .scale-in {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.js-loaded .scale-in:not(.is-visible) {
     opacity: 0;
     transform: scale(0.95);
-    transition: opacity var(--transition-slow), transform var(--transition-slow);
 }
 
 .scale-in.is-visible {
@@ -778,17 +789,22 @@ small {
     transform: scale(1);
 }
 
-/* Slide */
-.slide-left {
-    opacity: 0;
-    transform: translateX(-30px);
+/* Slide - visible by default */
+.slide-left,
+.slide-right {
+    opacity: 1;
+    transform: translateX(0);
     transition: opacity var(--transition-slow), transform var(--transition-slow);
 }
 
-.slide-right {
+.js-loaded .slide-left:not(.is-visible) {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+.js-loaded .slide-right:not(.is-visible) {
     opacity: 0;
     transform: translateX(30px);
-    transition: opacity var(--transition-slow), transform var(--transition-slow);
 }
 
 .slide-left.is-visible,
