@@ -1,0 +1,39 @@
+# WordPress Core (не коммитить)
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/index.php
+/license.txt
+/readme.html
+/xmlrpc.php
+
+# WordPress Content (выборочно)
+/wp-content/plugins/
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/cache/
+/wp-content/debug.log
+/wp-content/languages/
+/wp-content/themes/twentytwenty*/
+/wp-content/themes/index.php
+/wp-content/index.php
+
+# Config files
+wp-config.php
+wp-config-production.php
+wp-config.php.bak
+wp-config-sample.php
+
+# Credentials
+.ftp-credentials
+.env
+
+# System
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*

@@ -1,7 +1,8 @@
 <?php
 /**
- * Template Name: Front Page
- * Description: Homepage template with multiple sections
+ * The front page template file
+ *
+ * This template is automatically used when a static front page is set.
  *
  * @package Flavor_Starter
  * @since 1.0.0
