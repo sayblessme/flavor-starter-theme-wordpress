@@ -37,6 +37,41 @@
    ========================================================================== */
 .breadcrumb {
     padding: var(--space-4) 0;
+    background: transparent;
+    border-bottom: none;
+}
+
+/* Breadcrumb inside page-header - transparent version */
+.page-header .breadcrumb {
+    padding: 0 0 var(--space-6);
+    background: transparent;
+    border-bottom: none;
+}
+
+.page-header .breadcrumb .container {
+    padding: 0;
+}
+
+.page-header .breadcrumb__item a,
+.page-header .breadcrumb__item span {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.page-header .breadcrumb__item a:hover {
+    color: var(--color-white);
+}
+
+.page-header .breadcrumb__item--current span {
+    color: var(--color-white);
+}
+
+.page-header .breadcrumb__separator {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Standalone breadcrumb (outside page-header) */
+.site-main > .breadcrumb {
+    padding: var(--space-4) 0;
     background: var(--color-gray-50);
     border-bottom: 1px solid var(--color-gray-200);
 }
