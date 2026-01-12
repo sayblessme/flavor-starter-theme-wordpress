@@ -1413,3 +1413,140 @@ a.pagination__item:hover {
     background: #fef2f2;
     color: #991b1b;
 }
+
+/* ==========================================================================
+   PAGE CONTENT FORMS (WordPress content without classes)
+   ========================================================================== */
+.entry-content form,
+.page-content form,
+.site-main form:not(.search-form):not(.woocommerce-form):not(.comment-form) {
+    max-width: 100%;
+}
+
+.entry-content form label,
+.page-content form label,
+.site-main > .container form label {
+    display: block;
+    font-weight: var(--font-medium);
+    margin-bottom: var(--space-2);
+    color: var(--color-gray-700);
+    font-size: var(--text-sm);
+}
+
+.entry-content form input[type="text"],
+.entry-content form input[type="email"],
+.entry-content form input[type="tel"],
+.entry-content form input[type="url"],
+.entry-content form input[type="number"],
+.entry-content form input[type="password"],
+.entry-content form select,
+.entry-content form textarea,
+.page-content form input[type="text"],
+.page-content form input[type="email"],
+.page-content form input[type="tel"],
+.page-content form input[type="url"],
+.page-content form input[type="number"],
+.page-content form input[type="password"],
+.page-content form select,
+.page-content form textarea,
+.site-main > .container form input[type="text"],
+.site-main > .container form input[type="email"],
+.site-main > .container form input[type="tel"],
+.site-main > .container form input[type="url"],
+.site-main > .container form input[type="number"],
+.site-main > .container form input[type="password"],
+.site-main > .container form select,
+.site-main > .container form textarea {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-gray-300);
+    border-radius: var(--radius-lg);
+    font-size: var(--text-base);
+    font-family: inherit;
+    background: var(--color-white);
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-4);
+    box-sizing: border-box;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.entry-content form input[type="text"]:focus,
+.entry-content form input[type="email"]:focus,
+.entry-content form input[type="tel"]:focus,
+.entry-content form input[type="url"]:focus,
+.entry-content form input[type="number"]:focus,
+.entry-content form input[type="password"]:focus,
+.entry-content form select:focus,
+.entry-content form textarea:focus,
+.page-content form input:focus,
+.page-content form select:focus,
+.page-content form textarea:focus,
+.site-main > .container form input:focus,
+.site-main > .container form select:focus,
+.site-main > .container form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.entry-content form select,
+.page-content form select,
+.site-main > .container form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right var(--space-4) center;
+    padding-right: var(--space-10);
+    cursor: pointer;
+}
+
+.entry-content form textarea,
+.page-content form textarea,
+.site-main > .container form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.entry-content form button[type="submit"],
+.entry-content form input[type="submit"],
+.page-content form button[type="submit"],
+.page-content form input[type="submit"],
+.site-main > .container form button[type="submit"],
+.site-main > .container form input[type="submit"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-6);
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: var(--radius-lg);
+    font-size: var(--text-base);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    transition: background var(--transition-fast);
+}
+
+.entry-content form button[type="submit"]:hover,
+.entry-content form input[type="submit"]:hover,
+.page-content form button[type="submit"]:hover,
+.page-content form input[type="submit"]:hover,
+.site-main > .container form button[type="submit"]:hover,
+.site-main > .container form input[type="submit"]:hover {
+    background: var(--color-primary-dark);
+}
+
+/* Contact Page specific two-column layout */
+.contact-page-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--space-12);
+    padding: var(--space-12) 0;
+}
+
+@media (max-width: 1024px) {
+    .contact-page-content {
+        grid-template-columns: 1fr;
+    }
+}
