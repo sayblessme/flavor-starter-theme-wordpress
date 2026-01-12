@@ -294,7 +294,7 @@ function flavor_reading_time(int $post_id = 0): string {
     $reading_time = ceil($word_count / 200); // Average reading speed
 
     return sprintf(
-        _n('%d min read', '%d min read', $reading_time, 'flavor-starter'),
+        _n('%d мин чтения', '%d мин чтения', $reading_time, 'flavor-starter'),
         $reading_time
     );
 }

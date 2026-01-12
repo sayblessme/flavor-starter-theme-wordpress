@@ -17,7 +17,7 @@
         <?php endif; ?>
 
         <div class="featured-post__content">
-            <span class="featured-post__badge"><?php esc_html_e('Featured', 'flavor-starter'); ?></span>
+            <span class="featured-post__badge"><?php esc_html_e('Рекомендуем', 'flavor-starter'); ?></span>
 
             <?php
             $categories = get_the_category();
@@ -51,7 +51,7 @@
             </div>
 
             <a href="<?php the_permalink(); ?>" class="btn btn--primary">
-                <?php esc_html_e('Read Article', 'flavor-starter'); ?>
+                <?php esc_html_e('Читать статью', 'flavor-starter'); ?>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
