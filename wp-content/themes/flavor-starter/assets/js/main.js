@@ -40,7 +40,7 @@
          * Sticky Header
          */
         initStickyHeader: function () {
-            const header = document.querySelector('.header');
+            const header = document.querySelector('.site-header');
             if (!header) return;
 
             const headerHeight = header.offsetHeight;
@@ -51,17 +51,17 @@
 
                 // Add scrolled class
                 if (currentScrollY > 50) {
-                    header.classList.add('header--scrolled');
+                    header.classList.add('is-scrolled');
                 } else {
-                    header.classList.remove('header--scrolled');
+                    header.classList.remove('is-scrolled');
                 }
 
                 // Hide/show on scroll direction
                 if (currentScrollY > headerHeight) {
                     if (currentScrollY > lastScrollY) {
-                        header.classList.add('header--hidden');
+                        header.classList.add('is-hidden');
                     } else {
-                        header.classList.remove('header--hidden');
+                        header.classList.remove('is-hidden');
                     }
                 }
 

@@ -974,3 +974,105 @@ a.pagination__item:hover {
     overflow-y: auto;
     max-height: 90vh;
 }
+
+/* ==========================================================================
+   CONTACT FORM
+   ========================================================================== */
+.contact-form {
+    background: var(--color-white);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-form .form-group {
+    margin-bottom: var(--space-6);
+}
+
+.contact-form label {
+    display: block;
+    font-weight: var(--font-medium);
+    margin-bottom: var(--space-2);
+    color: var(--color-gray-700);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-gray-300);
+    border-radius: var(--radius-lg);
+    font-size: var(--text-base);
+    font-family: inherit;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.contact-form-success {
+    background: #ecfdf5;
+    color: #065f46;
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-4);
+}
+
+.contact-form-error {
+    background: #fef2f2;
+    color: #991b1b;
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-4);
+}
+
+/* Contact Page Layout */
+.contact-content {
+    padding: var(--space-16) 0;
+    background: var(--color-gray-50);
+}
+
+.contact-info {
+    background: var(--color-white);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-info h3 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-6);
+}
+
+.contact-info p {
+    margin-bottom: var(--space-4);
+    color: var(--color-gray-600);
+}
+
+.contact-info a {
+    color: var(--color-primary);
+    transition: color var(--transition-fast);
+}
+
+.contact-info a:hover {
+    color: var(--color-primary-dark);
+}
