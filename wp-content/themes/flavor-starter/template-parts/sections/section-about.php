@@ -13,16 +13,16 @@ $about_description = '';
 $about_image = '';
 
 if (function_exists('get_field')) {
-    $about_label = get_field('about_label') ?: 'About Us';
-    $about_title = get_field('about_title') ?: 'Digital Studio with Soul';
+    $about_label = get_field('about_label') ?: 'О нас';
+    $about_title = get_field('about_title') ?: 'Цифровая студия с душой';
     $about_description = get_field('about_description');
     $about_image = get_field('about_image');
 }
 
-if (!$about_label) $about_label = 'About Us';
-if (!$about_title) $about_title = 'Digital Studio with Soul';
+if (!$about_label) $about_label = 'О нас';
+if (!$about_title) $about_title = 'Цифровая студия с душой';
 if (!$about_description) {
-    $about_description = '<p>We are a team of passionate designers, developers, and strategists dedicated to creating exceptional digital experiences. With over a decade of experience, we\'ve helped businesses of all sizes transform their online presence.</p><p>Our approach combines cutting-edge technology with timeless design principles, ensuring every project we deliver not only looks stunning but also performs exceptionally.</p>';
+    $about_description = '<p>Мы — команда увлечённых дизайнеров, разработчиков и стратегов, которые создают исключительные цифровые решения. С более чем десятилетним опытом мы помогли бизнесам любого масштаба преобразить их онлайн-присутствие.</p><p>Наш подход сочетает передовые технологии с проверенными временем принципами дизайна, гарантируя, что каждый проект не только выглядит потрясающе, но и работает безупречно.</p>';
 }
 ?>
 
@@ -50,7 +50,7 @@ if (!$about_description) {
                 <!-- Experience Badge -->
                 <div class="about-badge">
                     <span class="about-badge__number">10+</span>
-                    <span class="about-badge__text"><?php esc_html_e('Years of Excellence', 'flavor-starter'); ?></span>
+                    <span class="about-badge__text"><?php esc_html_e('Лет опыта', 'flavor-starter'); ?></span>
                 </div>
             </div>
 
@@ -75,8 +75,8 @@ if (!$about_description) {
                             </svg>
                         </div>
                         <div class="about-feature__content">
-                            <h4><?php esc_html_e('Quality First', 'flavor-starter'); ?></h4>
-                            <p><?php esc_html_e('We never compromise on quality, delivering pixel-perfect solutions.', 'flavor-starter'); ?></p>
+                            <h4><?php esc_html_e('Качество прежде всего', 'flavor-starter'); ?></h4>
+                            <p><?php esc_html_e('Мы никогда не идём на компромисс в качестве, создавая идеальные решения.', 'flavor-starter'); ?></p>
                         </div>
                     </div>
 
@@ -88,8 +88,8 @@ if (!$about_description) {
                             </svg>
                         </div>
                         <div class="about-feature__content">
-                            <h4><?php esc_html_e('On-Time Delivery', 'flavor-starter'); ?></h4>
-                            <p><?php esc_html_e('We respect deadlines and deliver projects on schedule.', 'flavor-starter'); ?></p>
+                            <h4><?php esc_html_e('Точно в срок', 'flavor-starter'); ?></h4>
+                            <p><?php esc_html_e('Мы уважаем сроки и сдаём проекты вовремя.', 'flavor-starter'); ?></p>
                         </div>
                     </div>
 
@@ -103,15 +103,15 @@ if (!$about_description) {
                             </svg>
                         </div>
                         <div class="about-feature__content">
-                            <h4><?php esc_html_e('Dedicated Support', 'flavor-starter'); ?></h4>
-                            <p><?php esc_html_e('Our team is always here to help you succeed.', 'flavor-starter'); ?></p>
+                            <h4><?php esc_html_e('Полная поддержка', 'flavor-starter'); ?></h4>
+                            <p><?php esc_html_e('Наша команда всегда готова помочь вам добиться успеха.', 'flavor-starter'); ?></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="about-cta">
                     <a href="<?php echo esc_url(get_permalink(get_page_by_path('about'))); ?>" class="btn btn-primary">
-                        <?php esc_html_e('Learn More About Us', 'flavor-starter'); ?>
+                        <?php esc_html_e('Узнать больше о нас', 'flavor-starter'); ?>
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow">
                             <line x1="5" y1="12" x2="19" y2="12"></line>
                             <polyline points="12 5 19 12 12 19"></polyline>

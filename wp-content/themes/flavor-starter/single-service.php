@@ -41,13 +41,13 @@ get_header();
 
                             <div class="service-hero__actions">
                                 <a href="#contact" class="btn btn--primary btn--lg">
-                                    <?php esc_html_e('Get Started', 'flavor-starter'); ?>
+                                    <?php esc_html_e('Начать проект', 'flavor-starter'); ?>
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M5 12h14M12 5l7 7-7 7"/>
                                     </svg>
                                 </a>
                                 <a href="#features" class="btn btn--outline btn--lg">
-                                    <?php esc_html_e('Learn More', 'flavor-starter'); ?>
+                                    <?php esc_html_e('Подробнее', 'flavor-starter'); ?>
                                 </a>
                             </div>
                         </div>
@@ -69,8 +69,8 @@ get_header();
                 <section id="features" class="service-features section">
                     <div class="container">
                         <div class="section__header">
-                            <h2 class="section-title"><?php esc_html_e('What\'s Included', 'flavor-starter'); ?></h2>
-                            <p class="section-subtitle"><?php esc_html_e('Everything you need to succeed with our service', 'flavor-starter'); ?></p>
+                            <h2 class="section-title"><?php esc_html_e('Что включено', 'flavor-starter'); ?></h2>
+                            <p class="section-subtitle"><?php esc_html_e('Всё необходимое для успеха с нашей услугой', 'flavor-starter'); ?></p>
                         </div>
 
                         <div class="service-features__grid">
@@ -111,8 +111,8 @@ get_header();
                 <section class="service-process section">
                     <div class="container">
                         <div class="section__header">
-                            <h2 class="section-title"><?php esc_html_e('Our Process', 'flavor-starter'); ?></h2>
-                            <p class="section-subtitle"><?php esc_html_e('How we work to deliver exceptional results', 'flavor-starter'); ?></p>
+                            <h2 class="section-title"><?php esc_html_e('Наш процесс', 'flavor-starter'); ?></h2>
+                            <p class="section-subtitle"><?php esc_html_e('Как мы работаем для достижения исключительных результатов', 'flavor-starter'); ?></p>
                         </div>
 
                         <div class="service-process__grid">
@@ -136,15 +136,15 @@ get_header();
                 <section class="service-pricing section section--gray">
                     <div class="container">
                         <div class="section__header">
-                            <h2 class="section-title"><?php esc_html_e('Pricing Plans', 'flavor-starter'); ?></h2>
-                            <p class="section-subtitle"><?php esc_html_e('Choose the plan that fits your needs', 'flavor-starter'); ?></p>
+                            <h2 class="section-title"><?php esc_html_e('Тарифы', 'flavor-starter'); ?></h2>
+                            <p class="section-subtitle"><?php esc_html_e('Выберите план, который подходит вам', 'flavor-starter'); ?></p>
                         </div>
 
                         <div class="service-pricing__grid">
                             <?php foreach ($pricing as $index => $plan) : ?>
                                 <div class="pricing-card <?php echo !empty($plan['featured']) ? 'pricing-card--featured' : ''; ?>">
                                     <?php if (!empty($plan['featured'])) : ?>
-                                        <div class="pricing-card__badge"><?php esc_html_e('Popular', 'flavor-starter'); ?></div>
+                                        <div class="pricing-card__badge"><?php esc_html_e('Популярный', 'flavor-starter'); ?></div>
                                     <?php endif; ?>
 
                                     <div class="pricing-card__header">
@@ -153,9 +153,9 @@ get_header();
                                     </div>
 
                                     <div class="pricing-card__price">
-                                        <span class="pricing-card__currency">$</span>
                                         <span class="pricing-card__amount"><?php echo esc_html($plan['price']); ?></span>
-                                        <span class="pricing-card__period">/<?php echo esc_html($plan['period'] ?? 'month'); ?></span>
+                                        <span class="pricing-card__currency">₽</span>
+                                        <span class="pricing-card__period">/<?php echo esc_html($plan['period'] ?? 'месяц'); ?></span>
                                     </div>
 
                                     <?php if (!empty($plan['features'])) : ?>
@@ -172,7 +172,7 @@ get_header();
                                     <?php endif; ?>
 
                                     <a href="<?php echo esc_url($plan['button_url'] ?? '#contact'); ?>" class="btn <?php echo !empty($plan['featured']) ? 'btn--primary' : 'btn--outline'; ?> btn--block">
-                                        <?php echo esc_html($plan['button_text'] ?? __('Get Started', 'flavor-starter')); ?>
+                                        <?php echo esc_html($plan['button_text'] ?? __('Заказать', 'flavor-starter')); ?>
                                     </a>
                                 </div>
                             <?php endforeach; ?>
@@ -200,8 +200,8 @@ get_header();
                 <section class="service-cases section">
                     <div class="container">
                         <div class="section__header">
-                            <h2 class="section-title"><?php esc_html_e('Related Projects', 'flavor-starter'); ?></h2>
-                            <p class="section-subtitle"><?php esc_html_e('See how we\'ve helped our clients succeed', 'flavor-starter'); ?></p>
+                            <h2 class="section-title"><?php esc_html_e('Связанные проекты', 'flavor-starter'); ?></h2>
+                            <p class="section-subtitle"><?php esc_html_e('Посмотрите, как мы помогли нашим клиентам достичь успеха', 'flavor-starter'); ?></p>
                         </div>
 
                         <div class="portfolio__grid">
@@ -225,7 +225,7 @@ get_header();
                 <section class="service-faq section section--gray">
                     <div class="container">
                         <div class="section__header">
-                            <h2 class="section-title"><?php esc_html_e('Frequently Asked Questions', 'flavor-starter'); ?></h2>
+                            <h2 class="section-title"><?php esc_html_e('Частые вопросы', 'flavor-starter'); ?></h2>
                         </div>
 
                         <div class="faq__list">
@@ -251,19 +251,19 @@ get_header();
             <section id="contact" class="service-cta section section--dark">
                 <div class="container">
                     <div class="service-cta__content">
-                        <h2 class="service-cta__title"><?php esc_html_e('Ready to Get Started?', 'flavor-starter'); ?></h2>
+                        <h2 class="service-cta__title"><?php esc_html_e('Готовы начать?', 'flavor-starter'); ?></h2>
                         <p class="service-cta__description">
-                            <?php esc_html_e('Let\'s discuss how we can help you achieve your goals.', 'flavor-starter'); ?>
+                            <?php esc_html_e('Давайте обсудим, как мы можем помочь вам достичь ваших целей.', 'flavor-starter'); ?>
                         </p>
                         <div class="service-cta__actions">
                             <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn btn--white btn--lg">
-                                <?php esc_html_e('Contact Us', 'flavor-starter'); ?>
+                                <?php esc_html_e('Связаться с нами', 'flavor-starter'); ?>
                             </a>
                             <a href="tel:<?php echo esc_attr(flavor_get_option('phone')); ?>" class="btn btn--outline-white btn--lg">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
                                 </svg>
-                                <?php esc_html_e('Call Us', 'flavor-starter'); ?>
+                                <?php esc_html_e('Позвонить', 'flavor-starter'); ?>
                             </a>
                         </div>
                     </div>

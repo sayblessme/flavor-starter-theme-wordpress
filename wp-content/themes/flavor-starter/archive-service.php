@@ -15,9 +15,9 @@ get_header();
             <?php flavor_breadcrumb(); ?>
 
             <div class="page-header__content">
-                <h1 class="page-header__title"><?php esc_html_e('Our Services', 'flavor-starter'); ?></h1>
+                <h1 class="page-header__title"><?php esc_html_e('Наши услуги', 'flavor-starter'); ?></h1>
                 <p class="page-header__description">
-                    <?php esc_html_e('Comprehensive solutions tailored to your needs. Discover how we can help you achieve your business goals.', 'flavor-starter'); ?>
+                    <?php esc_html_e('Комплексные решения, адаптированные под ваши потребности. Узнайте, как мы можем помочь достичь ваших бизнес-целей.', 'flavor-starter'); ?>
                 </p>
             </div>
         </div>
@@ -39,8 +39,8 @@ get_header();
                 <?php flavor_pagination(); ?>
             <?php else : ?>
                 <div class="no-results">
-                    <h2><?php esc_html_e('No services found', 'flavor-starter'); ?></h2>
-                    <p><?php esc_html_e('We haven\'t added any services yet. Check back soon!', 'flavor-starter'); ?></p>
+                    <h2><?php esc_html_e('Услуги не найдены', 'flavor-starter'); ?></h2>
+                    <p><?php esc_html_e('Мы ещё не добавили услуги. Загляните позже!', 'flavor-starter'); ?></p>
                 </div>
             <?php endif; ?>
         </div>
@@ -50,8 +50,8 @@ get_header();
     <section class="why-choose-us section section--gray">
         <div class="container">
             <div class="section__header">
-                <span class="section-label"><?php esc_html_e('Why Choose Us', 'flavor-starter'); ?></span>
-                <h2 class="section-title"><?php esc_html_e('What Sets Us Apart', 'flavor-starter'); ?></h2>
+                <span class="section-label"><?php esc_html_e('Почему мы', 'flavor-starter'); ?></span>
+                <h2 class="section-title"><?php esc_html_e('Наши преимущества', 'flavor-starter'); ?></h2>
             </div>
 
             <div class="why-choose-us__grid">
@@ -61,9 +61,9 @@ get_header();
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                         </svg>
                     </div>
-                    <h3 class="why-choose-us__title"><?php esc_html_e('Quality Guaranteed', 'flavor-starter'); ?></h3>
+                    <h3 class="why-choose-us__title"><?php esc_html_e('Гарантия качества', 'flavor-starter'); ?></h3>
                     <p class="why-choose-us__description">
-                        <?php esc_html_e('We stand behind our work with a satisfaction guarantee on all projects.', 'flavor-starter'); ?>
+                        <?php esc_html_e('Мы гарантируем качество работы и удовлетворённость результатом для всех проектов.', 'flavor-starter'); ?>
                     </p>
                 </div>
 
@@ -74,9 +74,9 @@ get_header();
                             <polyline points="12,6 12,12 16,14"/>
                         </svg>
                     </div>
-                    <h3 class="why-choose-us__title"><?php esc_html_e('On-Time Delivery', 'flavor-starter'); ?></h3>
+                    <h3 class="why-choose-us__title"><?php esc_html_e('Точно в срок', 'flavor-starter'); ?></h3>
                     <p class="why-choose-us__description">
-                        <?php esc_html_e('We respect deadlines and deliver projects on schedule, every time.', 'flavor-starter'); ?>
+                        <?php esc_html_e('Мы уважаем дедлайны и всегда сдаём проекты вовремя.', 'flavor-starter'); ?>
                     </p>
                 </div>
 
@@ -88,9 +88,9 @@ get_header();
                             <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
                         </svg>
                     </div>
-                    <h3 class="why-choose-us__title"><?php esc_html_e('Expert Team', 'flavor-starter'); ?></h3>
+                    <h3 class="why-choose-us__title"><?php esc_html_e('Команда экспертов', 'flavor-starter'); ?></h3>
                     <p class="why-choose-us__description">
-                        <?php esc_html_e('Our experienced professionals bring expertise to every project.', 'flavor-starter'); ?>
+                        <?php esc_html_e('Наши опытные специалисты привносят экспертизу в каждый проект.', 'flavor-starter'); ?>
                     </p>
                 </div>
 
@@ -100,9 +100,9 @@ get_header();
                             <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
                         </svg>
                     </div>
-                    <h3 class="why-choose-us__title"><?php esc_html_e('24/7 Support', 'flavor-starter'); ?></h3>
+                    <h3 class="why-choose-us__title"><?php esc_html_e('Поддержка 24/7', 'flavor-starter'); ?></h3>
                     <p class="why-choose-us__description">
-                        <?php esc_html_e('We\'re always available to answer questions and provide assistance.', 'flavor-starter'); ?>
+                        <?php esc_html_e('Мы всегда на связи, чтобы ответить на вопросы и оказать помощь.', 'flavor-starter'); ?>
                     </p>
                 </div>
             </div>
@@ -113,16 +113,16 @@ get_header();
     <section class="cta section section--dark">
         <div class="container">
             <div class="cta__content">
-                <h2 class="cta__title"><?php esc_html_e('Ready to Get Started?', 'flavor-starter'); ?></h2>
+                <h2 class="cta__title"><?php esc_html_e('Готовы начать?', 'flavor-starter'); ?></h2>
                 <p class="cta__description">
-                    <?php esc_html_e('Contact us today to discuss your project and receive a free quote.', 'flavor-starter'); ?>
+                    <?php esc_html_e('Свяжитесь с нами сегодня, чтобы обсудить ваш проект и получить бесплатную консультацию.', 'flavor-starter'); ?>
                 </p>
                 <div class="cta__actions">
                     <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn btn--white btn--lg">
-                        <?php esc_html_e('Get Free Quote', 'flavor-starter'); ?>
+                        <?php esc_html_e('Получить консультацию', 'flavor-starter'); ?>
                     </a>
                     <a href="tel:<?php echo esc_attr(flavor_get_option('phone')); ?>" class="btn btn--outline-white btn--lg">
-                        <?php esc_html_e('Call Us Now', 'flavor-starter'); ?>
+                        <?php esc_html_e('Позвонить нам', 'flavor-starter'); ?>
                     </a>
                 </div>
             </div>

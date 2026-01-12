@@ -16,26 +16,26 @@ $team = new WP_Query([
 // Default team members if none exist
 $default_team = [
     [
-        'name'     => 'Alex Morgan',
-        'position' => 'Creative Director',
+        'name'     => 'Алексей Морозов',
+        'position' => 'Креативный директор',
         'linkedin' => '#',
         'twitter'  => '#',
     ],
     [
-        'name'     => 'Jordan Lee',
-        'position' => 'Lead Developer',
+        'name'     => 'Мария Иванова',
+        'position' => 'Ведущий разработчик',
         'linkedin' => '#',
         'twitter'  => '#',
     ],
     [
-        'name'     => 'Sam Rivera',
-        'position' => 'UX Designer',
+        'name'     => 'Дмитрий Козлов',
+        'position' => 'UX дизайнер',
         'linkedin' => '#',
         'twitter'  => '#',
     ],
     [
-        'name'     => 'Taylor Kim',
-        'position' => 'Project Manager',
+        'name'     => 'Анна Петрова',
+        'position' => 'Менеджер проектов',
         'linkedin' => '#',
         'twitter'  => '#',
     ],
@@ -45,10 +45,10 @@ $default_team = [
 <section class="team-section section" id="team">
     <div class="container">
         <div class="section-header fade-in">
-            <span class="section-label"><?php esc_html_e('Our Team', 'flavor-starter'); ?></span>
-            <h2 class="section-title"><?php esc_html_e('Meet the Experts', 'flavor-starter'); ?></h2>
+            <span class="section-label"><?php esc_html_e('Наша команда', 'flavor-starter'); ?></span>
+            <h2 class="section-title"><?php esc_html_e('Познакомьтесь с экспертами', 'flavor-starter'); ?></h2>
             <p class="section-description">
-                <?php esc_html_e('Our talented team of professionals is dedicated to delivering exceptional results for every project.', 'flavor-starter'); ?>
+                <?php esc_html_e('Наша талантливая команда профессионалов стремится к исключительным результатам в каждом проекте.', 'flavor-starter'); ?>
             </p>
         </div>
 
@@ -65,6 +65,12 @@ $default_team = [
                     $linkedin = get_field('team_linkedin');
                     $twitter = get_field('team_twitter');
                     $email = get_field('team_email');
+                } else {
+                    // Fallback to post meta
+                    $position = get_post_meta(get_the_ID(), 'team_position', true);
+                    $linkedin = get_post_meta(get_the_ID(), 'team_linkedin', true);
+                    $twitter = get_post_meta(get_the_ID(), 'team_twitter', true);
+                    $email = get_post_meta(get_the_ID(), 'team_email', true);
                 }
             ?>
             <article class="team-card fade-in">

@@ -20,7 +20,7 @@ get_header();
                     if (is_tax('case_category')) :
                         single_term_title();
                     else :
-                        esc_html_e('Our Work', 'flavor-starter');
+                        esc_html_e('Наши работы', 'flavor-starter');
                     endif;
                     ?>
                 </h1>
@@ -29,7 +29,7 @@ get_header();
                     if (is_tax('case_category')) :
                         echo esc_html(term_description());
                     else :
-                        esc_html_e('Explore our portfolio of successful projects and see how we\'ve helped our clients achieve their goals.', 'flavor-starter');
+                        esc_html_e('Посмотрите наше портфолио успешных проектов и узнайте, как мы помогли клиентам достичь их целей.', 'flavor-starter');
                     endif;
                     ?>
                 </p>
@@ -42,7 +42,7 @@ get_header();
         <div class="container">
             <div class="portfolio__filters">
                 <button class="portfolio__filter <?php echo !is_tax() ? 'portfolio__filter--active' : ''; ?>" data-filter="all">
-                    <?php esc_html_e('All', 'flavor-starter'); ?>
+                    <?php esc_html_e('Все', 'flavor-starter'); ?>
                 </button>
                 <?php
                 $categories = get_terms([
@@ -77,8 +77,8 @@ get_header();
                 <?php flavor_pagination(); ?>
             <?php else : ?>
                 <div class="no-results">
-                    <h2><?php esc_html_e('No projects found', 'flavor-starter'); ?></h2>
-                    <p><?php esc_html_e('We haven\'t added any projects yet. Check back soon!', 'flavor-starter'); ?></p>
+                    <h2><?php esc_html_e('Проекты не найдены', 'flavor-starter'); ?></h2>
+                    <p><?php esc_html_e('Мы ещё не добавили проекты. Загляните позже!', 'flavor-starter'); ?></p>
                 </div>
             <?php endif; ?>
         </div>
@@ -88,12 +88,12 @@ get_header();
     <section class="cta section section--dark">
         <div class="container">
             <div class="cta__content">
-                <h2 class="cta__title"><?php esc_html_e('Have a Project in Mind?', 'flavor-starter'); ?></h2>
+                <h2 class="cta__title"><?php esc_html_e('Есть идея проекта?', 'flavor-starter'); ?></h2>
                 <p class="cta__description">
-                    <?php esc_html_e('Let\'s discuss how we can help bring your vision to life.', 'flavor-starter'); ?>
+                    <?php esc_html_e('Давайте обсудим, как мы можем воплотить вашу идею в жизнь.', 'flavor-starter'); ?>
                 </p>
                 <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn btn--white btn--lg">
-                    <?php esc_html_e('Start a Project', 'flavor-starter'); ?>
+                    <?php esc_html_e('Начать проект', 'flavor-starter'); ?>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>

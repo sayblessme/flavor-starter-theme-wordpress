@@ -16,28 +16,28 @@ $faqs = new WP_Query([
 // Default FAQs if none exist
 $default_faqs = [
     [
-        'question' => 'What services do you offer?',
-        'answer'   => 'We offer a comprehensive range of digital services including web development, UI/UX design, e-commerce solutions, mobile app development, branding, and digital marketing. Each service is tailored to meet your specific business needs.',
+        'question' => 'Какие услуги вы предлагаете?',
+        'answer'   => 'Мы предлагаем комплексный спектр цифровых услуг, включая веб-разработку, UI/UX дизайн, e-commerce решения, разработку мобильных приложений, брендинг и цифровой маркетинг. Каждая услуга адаптируется под ваши конкретные потребности.',
     ],
     [
-        'question' => 'How long does a typical project take?',
-        'answer'   => 'Project timelines vary based on complexity and scope. A simple website typically takes 4-6 weeks, while more complex e-commerce or custom applications may take 8-12 weeks or more. We provide detailed timelines during the proposal phase.',
+        'question' => 'Сколько времени занимает типичный проект?',
+        'answer'   => 'Сроки проекта варьируются в зависимости от сложности и масштаба. Простой сайт обычно занимает 4-6 недель, а более сложные e-commerce или кастомные приложения могут потребовать 8-12 недель или больше. Мы предоставляем детальные сроки на этапе предложения.',
     ],
     [
-        'question' => 'What is your pricing structure?',
-        'answer'   => 'We offer both fixed-price and hourly billing options depending on the project type. Fixed pricing works well for defined projects, while hourly billing is suitable for ongoing work or projects with evolving requirements. Contact us for a custom quote.',
+        'question' => 'Какова ваша ценовая политика?',
+        'answer'   => 'Мы предлагаем как фиксированную цену, так и почасовую оплату в зависимости от типа проекта. Фиксированная цена подходит для чётко определённых проектов, а почасовая оплата — для ongoing работы или проектов с изменяющимися требованиями.',
     ],
     [
-        'question' => 'Do you provide ongoing support and maintenance?',
-        'answer'   => 'Yes, we offer flexible maintenance and support packages to ensure your digital products remain secure, up-to-date, and performing optimally. Our support plans include regular updates, security monitoring, and priority assistance.',
+        'question' => 'Вы предоставляете техническую поддержку?',
+        'answer'   => 'Да, мы предлагаем гибкие пакеты поддержки и обслуживания, чтобы ваши цифровые продукты оставались безопасными, актуальными и работали оптимально. Наши планы поддержки включают регулярные обновления, мониторинг безопасности и приоритетную помощь.',
     ],
     [
-        'question' => 'Can you work with our existing team?',
-        'answer'   => 'Absolutely! We frequently collaborate with in-house teams and other agencies. We can integrate seamlessly into your workflow, whether you need us to lead the project or support your existing efforts.',
+        'question' => 'Можете ли вы работать с нашей командой?',
+        'answer'   => 'Безусловно! Мы часто сотрудничаем с внутренними командами и другими агентствами. Мы можем легко интегрироваться в ваш рабочий процесс, будь то руководство проектом или поддержка ваших существующих усилий.',
     ],
     [
-        'question' => 'What technologies do you work with?',
-        'answer'   => 'We work with a wide range of modern technologies including WordPress, WooCommerce, React, Vue.js, Node.js, PHP, and various cloud platforms. We choose the best technology stack based on your project requirements.',
+        'question' => 'С какими технологиями вы работаете?',
+        'answer'   => 'Мы работаем с широким спектром современных технологий, включая WordPress, WooCommerce, React, Vue.js, Node.js, PHP и различные облачные платформы. Мы выбираем лучший технологический стек на основе требований вашего проекта.',
     ],
 ];
 ?>
@@ -45,10 +45,10 @@ $default_faqs = [
 <section class="faq-section section" id="faq">
     <div class="container container-lg">
         <div class="section-header fade-in">
-            <span class="section-label"><?php esc_html_e('FAQ', 'flavor-starter'); ?></span>
-            <h2 class="section-title"><?php esc_html_e('Frequently Asked Questions', 'flavor-starter'); ?></h2>
+            <span class="section-label"><?php esc_html_e('Вопросы и ответы', 'flavor-starter'); ?></span>
+            <h2 class="section-title"><?php esc_html_e('Часто задаваемые вопросы', 'flavor-starter'); ?></h2>
             <p class="section-description">
-                <?php esc_html_e('Find answers to common questions about our services and process.', 'flavor-starter'); ?>
+                <?php esc_html_e('Найдите ответы на распространённые вопросы о наших услугах и процессе работы.', 'flavor-starter'); ?>
             </p>
         </div>
 
@@ -96,9 +96,9 @@ $default_faqs = [
         </div>
 
         <div class="faq-cta text-center fade-in">
-            <p class="faq-cta__text"><?php esc_html_e('Still have questions?', 'flavor-starter'); ?></p>
+            <p class="faq-cta__text"><?php esc_html_e('Остались вопросы?', 'flavor-starter'); ?></p>
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="btn btn-primary">
-                <?php esc_html_e('Contact Us', 'flavor-starter'); ?>
+                <?php esc_html_e('Связаться с нами', 'flavor-starter'); ?>
             </a>
         </div>
     </div>

@@ -13,27 +13,27 @@ if (function_exists('get_field')) {
     $stats = [
         [
             'number' => get_field('stat_1_number') ?: '150+',
-            'label'  => get_field('stat_1_label') ?: 'Projects Completed',
+            'label'  => get_field('stat_1_label') ?: 'Выполненных проектов',
         ],
         [
             'number' => get_field('stat_2_number') ?: '50+',
-            'label'  => get_field('stat_2_label') ?: 'Happy Clients',
+            'label'  => get_field('stat_2_label') ?: 'Довольных клиентов',
         ],
         [
             'number' => get_field('stat_3_number') ?: '10+',
-            'label'  => get_field('stat_3_label') ?: 'Years Experience',
+            'label'  => get_field('stat_3_label') ?: 'Лет опыта',
         ],
         [
             'number' => get_field('stat_4_number') ?: '25+',
-            'label'  => get_field('stat_4_label') ?: 'Awards Won',
+            'label'  => get_field('stat_4_label') ?: 'Наград',
         ],
     ];
 } else {
     $stats = [
-        ['number' => '150+', 'label' => 'Projects Completed'],
-        ['number' => '50+', 'label' => 'Happy Clients'],
-        ['number' => '10+', 'label' => 'Years Experience'],
-        ['number' => '25+', 'label' => 'Awards Won'],
+        ['number' => '150+', 'label' => 'Выполненных проектов'],
+        ['number' => '50+', 'label' => 'Довольных клиентов'],
+        ['number' => '10+', 'label' => 'Лет опыта'],
+        ['number' => '25+', 'label' => 'Наград'],
     ];
 }
 ?>

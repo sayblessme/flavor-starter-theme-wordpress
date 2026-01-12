@@ -14,15 +14,15 @@ $hero_cta_text = '';
 $hero_cta_url = '';
 
 if (function_exists('get_field')) {
-    $hero_title = get_field('hero_title') ?: 'We Create Digital Experiences That Matter';
-    $hero_subtitle = get_field('hero_subtitle') ?: 'Award-winning design studio crafting beautiful digital products, immersive brand experiences, and scalable technology solutions.';
+    $hero_title = get_field('hero_title') ?: 'Создаём цифровые решения, которые работают';
+    $hero_subtitle = get_field('hero_subtitle') ?: 'Профессиональная студия дизайна и разработки. Создаём красивые цифровые продукты, уникальные бренды и масштабируемые технологические решения.';
     $hero_image = get_field('hero_image');
-    $hero_cta_text = get_field('hero_cta_text') ?: 'View Our Work';
+    $hero_cta_text = get_field('hero_cta_text') ?: 'Наши работы';
     $hero_cta_url = get_field('hero_cta_url') ?: get_post_type_archive_link('case');
 } else {
-    $hero_title = 'We Create Digital Experiences That Matter';
-    $hero_subtitle = 'Award-winning design studio crafting beautiful digital products, immersive brand experiences, and scalable technology solutions.';
-    $hero_cta_text = 'View Our Work';
+    $hero_title = 'Создаём цифровые решения, которые работают';
+    $hero_subtitle = 'Профессиональная студия дизайна и разработки. Создаём красивые цифровые продукты, уникальные бренды и масштабируемые технологические решения.';
+    $hero_cta_text = 'Наши работы';
     $hero_cta_url = get_post_type_archive_link('case');
 }
 ?>
@@ -36,7 +36,7 @@ if (function_exists('get_field')) {
     <div class="container">
         <div class="hero-content">
             <div class="hero-text fade-in">
-                <span class="hero-label"><?php esc_html_e('Welcome to Flavor Starter', 'flavor-starter'); ?></span>
+                <span class="hero-label"><?php esc_html_e('Добро пожаловать в Flavor Studio', 'flavor-starter'); ?></span>
                 <h1 class="hero-title">
                     <?php echo wp_kses_post($hero_title); ?>
                 </h1>
@@ -52,7 +52,7 @@ if (function_exists('get_field')) {
                         </svg>
                     </a>
                     <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="btn btn-outline btn-xl">
-                        <?php esc_html_e('Get in Touch', 'flavor-starter'); ?>
+                        <?php esc_html_e('Связаться с нами', 'flavor-starter'); ?>
                     </a>
                 </div>
 
@@ -78,7 +78,7 @@ if (function_exists('get_field')) {
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                             <?php endfor; ?>
                         </div>
-                        <span><?php esc_html_e('Trusted by 50+ clients worldwide', 'flavor-starter'); ?></span>
+                        <span><?php esc_html_e('Нам доверяют 50+ клиентов', 'flavor-starter'); ?></span>
                     </div>
                 </div>
             </div>
@@ -121,8 +121,8 @@ if (function_exists('get_field')) {
                                 </svg>
                             </div>
                             <div class="hero-float__text">
-                                <span class="hero-float__title">Project Completed</span>
-                                <span class="hero-float__subtitle">E-commerce Platform</span>
+                                <span class="hero-float__title">Проект завершён</span>
+                                <span class="hero-float__subtitle">E-commerce платформа</span>
                             </div>
                         </div>
                     </div>
@@ -131,7 +131,7 @@ if (function_exists('get_field')) {
                         <div class="hero-float__stat">
                             <span class="hero-float__number" data-count="98">0</span>
                             <span class="hero-float__percent">%</span>
-                            <span class="hero-float__label"><?php esc_html_e('Client Satisfaction', 'flavor-starter'); ?></span>
+                            <span class="hero-float__label"><?php esc_html_e('Довольных клиентов', 'flavor-starter'); ?></span>
                         </div>
                     </div>
 
@@ -140,7 +140,7 @@ if (function_exists('get_field')) {
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                             </svg>
-                            <span><?php esc_html_e('Top Rated', 'flavor-starter'); ?></span>
+                            <span><?php esc_html_e('Высший рейтинг', 'flavor-starter'); ?></span>
                         </div>
                     </div>
                 </div>
@@ -151,7 +151,7 @@ if (function_exists('get_field')) {
     <!-- Scroll Indicator -->
     <div class="hero-scroll">
         <a href="#about" class="hero-scroll__link">
-            <span class="hero-scroll__text"><?php esc_html_e('Scroll to explore', 'flavor-starter'); ?></span>
+            <span class="hero-scroll__text"><?php esc_html_e('Прокрутите вниз', 'flavor-starter'); ?></span>
             <span class="hero-scroll__icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="12" y1="5" x2="12" y2="19"></line>

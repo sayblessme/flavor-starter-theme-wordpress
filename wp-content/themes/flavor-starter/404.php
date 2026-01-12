@@ -14,7 +14,7 @@ get_header();
             <div class="error-404__content">
                 <div class="error-404__number">404</div>
 
-                <h1 class="error-404__title"><?php esc_html_e('Page Not Found', 'flavor-starter'); ?></h1>
+                <h1 class="error-404__title"><?php esc_html_e('Страница не найдена', 'flavor-starter'); ?></h1>
 
                 <p class="error-404__description">
                     <?php
@@ -22,18 +22,18 @@ get_header();
                     if ($custom_message) :
                         echo esc_html($custom_message);
                     else :
-                        esc_html_e('Oops! The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.', 'flavor-starter');
+                        esc_html_e('Упс! Страница, которую вы ищете, могла быть удалена, переименована или временно недоступна.', 'flavor-starter');
                     endif;
                     ?>
                 </p>
 
                 <div class="error-404__search">
-                    <p><?php esc_html_e('Try searching for what you need:', 'flavor-starter'); ?></p>
+                    <p><?php esc_html_e('Попробуйте найти то, что вам нужно:', 'flavor-starter'); ?></p>
                     <?php get_search_form(); ?>
                 </div>
 
                 <div class="error-404__links">
-                    <p><?php esc_html_e('Or check out these links:', 'flavor-starter'); ?></p>
+                    <p><?php esc_html_e('Или посмотрите эти ссылки:', 'flavor-starter'); ?></p>
 
                     <div class="error-404__links-grid">
                         <a href="<?php echo esc_url(home_url('/')); ?>" class="error-404__link">
@@ -41,7 +41,7 @@ get_header();
                                 <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
                                 <polyline points="9,22 9,12 15,12 15,22"/>
                             </svg>
-                            <span><?php esc_html_e('Home', 'flavor-starter'); ?></span>
+                            <span><?php esc_html_e('Главная', 'flavor-starter'); ?></span>
                         </a>
 
                         <?php if (class_exists('WooCommerce')) : ?>
@@ -51,7 +51,7 @@ get_header();
                                     <circle cx="20" cy="21" r="1"/>
                                     <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
                                 </svg>
-                                <span><?php esc_html_e('Shop', 'flavor-starter'); ?></span>
+                                <span><?php esc_html_e('Магазин', 'flavor-starter'); ?></span>
                             </a>
                         <?php endif; ?>
 
@@ -60,7 +60,7 @@ get_header();
                                 <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
                                 <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
                             </svg>
-                            <span><?php esc_html_e('Blog', 'flavor-starter'); ?></span>
+                            <span><?php esc_html_e('Блог', 'flavor-starter'); ?></span>
                         </a>
 
                         <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="error-404__link">
@@ -68,7 +68,7 @@ get_header();
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                                 <polyline points="22,6 12,13 2,6"/>
                             </svg>
-                            <span><?php esc_html_e('Contact', 'flavor-starter'); ?></span>
+                            <span><?php esc_html_e('Контакты', 'flavor-starter'); ?></span>
                         </a>
                     </div>
                 </div>
@@ -77,7 +77,7 @@ get_header();
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M19 12H5M12 19l-7-7 7-7"/>
                     </svg>
-                    <?php esc_html_e('Back to Home', 'flavor-starter'); ?>
+                    <?php esc_html_e('Вернуться на главную', 'flavor-starter'); ?>
                 </a>
             </div>
         </div>

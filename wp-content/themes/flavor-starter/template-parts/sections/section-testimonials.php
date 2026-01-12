@@ -16,33 +16,33 @@ $testimonials = new WP_Query([
 // Default testimonials if none exist
 $default_testimonials = [
     [
-        'content'  => 'Working with this team was an absolute pleasure. They delivered a stunning website that exceeded our expectations. The attention to detail and commitment to quality is unmatched.',
-        'author'   => 'Sarah Johnson',
+        'content'  => 'Работать с этой командой было настоящим удовольствием. Они создали потрясающий сайт, который превзошёл наши ожидания. Внимание к деталям и стремление к качеству на высшем уровне.',
+        'author'   => 'Елена Смирнова',
         'position' => 'CEO, TechStart Inc.',
         'rating'   => 5,
     ],
     [
-        'content'  => 'The e-commerce solution they built for us has transformed our business. Sales have increased by 200% since launch. Highly recommend their services!',
-        'author'   => 'Michael Chen',
-        'position' => 'Founder, StyleShop',
+        'content'  => 'E-commerce решение, которое они создали для нас, преобразило наш бизнес. Продажи выросли на 200% с момента запуска. Очень рекомендую!',
+        'author'   => 'Михаил Чернов',
+        'position' => 'Основатель, StyleShop',
         'rating'   => 5,
     ],
     [
-        'content'  => 'Professional, creative, and incredibly responsive. They took our vague ideas and turned them into a beautiful, functional website. A truly talented team.',
-        'author'   => 'Emily Rodriguez',
-        'position' => 'Marketing Director, GlobalCorp',
+        'content'  => 'Профессионально, креативно и невероятно отзывчиво. Они взяли наши размытые идеи и превратили их в красивый, функциональный сайт. Действительно талантливая команда.',
+        'author'   => 'Анна Родригес',
+        'position' => 'Директор по маркетингу, GlobalCorp',
         'rating'   => 5,
     ],
     [
-        'content'  => 'From branding to web development, they handled everything seamlessly. Our new digital presence has significantly improved customer engagement.',
-        'author'   => 'David Kim',
+        'content'  => 'От брендинга до веб-разработки — они справились со всем безупречно. Наше новое цифровое присутствие значительно улучшило взаимодействие с клиентами.',
+        'author'   => 'Дмитрий Ким',
         'position' => 'COO, InnovateLabs',
         'rating'   => 5,
     ],
     [
-        'content'  => 'The mobile app they developed is intuitive and performs flawlessly. Our users love it, and we ve seen a 50% increase in daily active users.',
-        'author'   => 'Lisa Thompson',
-        'position' => 'Product Manager, AppVenture',
+        'content'  => 'Мобильное приложение, которое они разработали, интуитивно понятное и работает безупречно. Наши пользователи в восторге, и мы увидели рост активных пользователей на 50%.',
+        'author'   => 'Ольга Томпсон',
+        'position' => 'Менеджер продукта, AppVenture',
         'rating'   => 5,
     ],
 ];
@@ -51,10 +51,10 @@ $default_testimonials = [
 <section class="testimonials-section section bg-gray-50" id="testimonials">
     <div class="container">
         <div class="section-header fade-in">
-            <span class="section-label"><?php esc_html_e('Testimonials', 'flavor-starter'); ?></span>
-            <h2 class="section-title"><?php esc_html_e('What Our Clients Say', 'flavor-starter'); ?></h2>
+            <span class="section-label"><?php esc_html_e('Отзывы', 'flavor-starter'); ?></span>
+            <h2 class="section-title"><?php esc_html_e('Что говорят наши клиенты', 'flavor-starter'); ?></h2>
             <p class="section-description">
-                <?php esc_html_e('Don\'t just take our word for it. Here\'s what our clients have to say about working with us.', 'flavor-starter'); ?>
+                <?php esc_html_e('Не верьте нам на слово. Вот что говорят наши клиенты о работе с нами.', 'flavor-starter'); ?>
             </p>
         </div>
 
@@ -133,10 +133,10 @@ $default_testimonials = [
             </div>
 
             <div class="testimonials-slider__nav">
-                <button type="button" class="testimonials-slider__btn testimonials-slider__btn--prev" aria-label="<?php esc_attr_e('Previous', 'flavor-starter'); ?>">
+                <button type="button" class="testimonials-slider__btn testimonials-slider__btn--prev" aria-label="<?php esc_attr_e('Назад', 'flavor-starter'); ?>">
                     <?php echo flavor_icon('arrow-left', 24); ?>
                 </button>
-                <button type="button" class="testimonials-slider__btn testimonials-slider__btn--next" aria-label="<?php esc_attr_e('Next', 'flavor-starter'); ?>">
+                <button type="button" class="testimonials-slider__btn testimonials-slider__btn--next" aria-label="<?php esc_attr_e('Вперёд', 'flavor-starter'); ?>">
                     <?php echo flavor_icon('arrow-right', 24); ?>
                 </button>
             </div>

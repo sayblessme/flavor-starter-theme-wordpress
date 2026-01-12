@@ -25,7 +25,7 @@ get_header();
                 <?php if (is_shop()) : ?>
                     <h1 class="page-header__title"><?php woocommerce_page_title(); ?></h1>
                     <p class="page-header__description">
-                        <?php esc_html_e('Discover our curated collection of professional services and digital products.', 'flavor-starter'); ?>
+                        <?php esc_html_e('Откройте для себя нашу коллекцию профессиональных услуг и цифровых продуктов.', 'flavor-starter'); ?>
                     </p>
                 <?php elseif (is_product_category()) : ?>
                     <h1 class="page-header__title"><?php single_cat_title(); ?></h1>

@@ -18,7 +18,7 @@ get_header();
                     <?php
                     printf(
                         /* translators: %s: search query. */
-                        esc_html__('Search Results for: %s', 'flavor-starter'),
+                        esc_html__('Результаты поиска: %s', 'flavor-starter'),
                         '<span>' . get_search_query() . '</span>'
                     );
                     ?>
@@ -29,7 +29,7 @@ get_header();
                         <?php
                         printf(
                             /* translators: %d: number of results. */
-                            esc_html(_n('%d result found', '%d results found', $wp_query->found_posts, 'flavor-starter')),
+                            esc_html(_n('Найден %d результат', 'Найдено %d результатов', $wp_query->found_posts, 'flavor-starter')),
                             $wp_query->found_posts
                         );
                         ?>
@@ -74,18 +74,18 @@ get_header();
                         </svg>
                     </div>
 
-                    <h2 class="no-results__title"><?php esc_html_e('No Results Found', 'flavor-starter'); ?></h2>
+                    <h2 class="no-results__title"><?php esc_html_e('Ничего не найдено', 'flavor-starter'); ?></h2>
 
                     <p class="no-results__text">
-                        <?php esc_html_e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'flavor-starter'); ?>
+                        <?php esc_html_e('К сожалению, по вашему запросу ничего не найдено. Попробуйте изменить ключевые слова.', 'flavor-starter'); ?>
                     </p>
 
                     <div class="no-results__suggestions">
-                        <h3><?php esc_html_e('Suggestions:', 'flavor-starter'); ?></h3>
+                        <h3><?php esc_html_e('Рекомендации:', 'flavor-starter'); ?></h3>
                         <ul>
-                            <li><?php esc_html_e('Make sure all words are spelled correctly.', 'flavor-starter'); ?></li>
-                            <li><?php esc_html_e('Try different keywords.', 'flavor-starter'); ?></li>
-                            <li><?php esc_html_e('Try more general keywords.', 'flavor-starter'); ?></li>
+                            <li><?php esc_html_e('Убедитесь, что все слова написаны правильно.', 'flavor-starter'); ?></li>
+                            <li><?php esc_html_e('Попробуйте другие ключевые слова.', 'flavor-starter'); ?></li>
+                            <li><?php esc_html_e('Попробуйте более общие запросы.', 'flavor-starter'); ?></li>
                         </ul>
                     </div>
 

@@ -22,38 +22,38 @@ $case_categories = get_terms([
 // Default cases if none exist
 $default_cases = [
     [
-        'title'    => 'E-Commerce Platform',
-        'category' => 'Web Development',
+        'title'    => 'E-Commerce платформа',
+        'category' => 'Веб-разработка',
         'client'   => 'TechStore Inc.',
         'color'    => '#6366f1',
     ],
     [
-        'title'    => 'Mobile Banking App',
-        'category' => 'Mobile App',
+        'title'    => 'Мобильный банкинг',
+        'category' => 'Мобильное приложение',
         'client'   => 'FinanceHub',
         'color'    => '#ec4899',
     ],
     [
-        'title'    => 'Brand Identity Design',
-        'category' => 'Branding',
+        'title'    => 'Дизайн бренда',
+        'category' => 'Брендинг',
         'client'   => 'StartupX',
         'color'    => '#14b8a6',
     ],
     [
-        'title'    => 'SaaS Dashboard',
-        'category' => 'UI/UX Design',
+        'title'    => 'SaaS панель управления',
+        'category' => 'UI/UX дизайн',
         'client'   => 'DataFlow',
         'color'    => '#f59e0b',
     ],
     [
-        'title'    => 'Corporate Website',
-        'category' => 'Web Development',
+        'title'    => 'Корпоративный сайт',
+        'category' => 'Веб-разработка',
         'client'   => 'Global Corp',
         'color'    => '#8b5cf6',
     ],
     [
-        'title'    => 'Restaurant App',
-        'category' => 'Mobile App',
+        'title'    => 'Приложение для ресторана',
+        'category' => 'Мобильное приложение',
         'client'   => 'FoodDelivery',
         'color'    => '#ef4444',
     ],
@@ -63,10 +63,10 @@ $default_cases = [
 <section class="portfolio-section section" id="portfolio">
     <div class="container">
         <div class="section-header fade-in">
-            <span class="section-label"><?php esc_html_e('Our Work', 'flavor-starter'); ?></span>
-            <h2 class="section-title"><?php esc_html_e('Featured Projects', 'flavor-starter'); ?></h2>
+            <span class="section-label"><?php esc_html_e('Наши работы', 'flavor-starter'); ?></span>
+            <h2 class="section-title"><?php esc_html_e('Избранные проекты', 'flavor-starter'); ?></h2>
             <p class="section-description">
-                <?php esc_html_e('Explore our latest work and see how we help businesses achieve their goals through innovative digital solutions.', 'flavor-starter'); ?>
+                <?php esc_html_e('Познакомьтесь с нашими последними работами и узнайте, как мы помогаем бизнесу достигать целей.', 'flavor-starter'); ?>
             </p>
         </div>
 
@@ -74,7 +74,7 @@ $default_cases = [
         <!-- Filter Buttons -->
         <div class="portfolio-filter fade-in">
             <button type="button" class="portfolio-filter__btn is-active" data-filter="all">
-                <?php esc_html_e('All', 'flavor-starter'); ?>
+                <?php esc_html_e('Все', 'flavor-starter'); ?>
             </button>
             <?php foreach ($case_categories as $category): ?>
             <button type="button" class="portfolio-filter__btn" data-filter="<?php echo esc_attr($category->slug); ?>">
@@ -171,7 +171,7 @@ $default_cases = [
 
         <div class="portfolio-cta text-center fade-in">
             <a href="<?php echo esc_url(get_post_type_archive_link('case')); ?>" class="btn btn-primary btn-lg">
-                <?php esc_html_e('View All Projects', 'flavor-starter'); ?>
+                <?php esc_html_e('Все проекты', 'flavor-starter'); ?>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>

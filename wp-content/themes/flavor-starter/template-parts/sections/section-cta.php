@@ -13,14 +13,14 @@ $cta_button_text = '';
 $cta_button_url = '';
 
 if (function_exists('get_field')) {
-    $cta_title = get_field('cta_title') ?: 'Ready to Start Your Project?';
-    $cta_description = get_field('cta_description') ?: 'Let\'s work together to create something amazing. Get in touch with us today.';
-    $cta_button_text = get_field('cta_button_text') ?: 'Get in Touch';
+    $cta_title = get_field('cta_title') ?: 'Готовы начать проект?';
+    $cta_description = get_field('cta_description') ?: 'Давайте работать вместе над созданием чего-то удивительного. Свяжитесь с нами сегодня.';
+    $cta_button_text = get_field('cta_button_text') ?: 'Связаться с нами';
     $cta_button_url = get_field('cta_button_url') ?: get_permalink(get_page_by_path('contact'));
 } else {
-    $cta_title = 'Ready to Start Your Project?';
-    $cta_description = 'Let\'s work together to create something amazing. Get in touch with us today.';
-    $cta_button_text = 'Get in Touch';
+    $cta_title = 'Готовы начать проект?';
+    $cta_description = 'Давайте работать вместе над созданием чего-то удивительного. Свяжитесь с нами сегодня.';
+    $cta_button_text = 'Связаться с нами';
     $cta_button_url = get_permalink(get_page_by_path('contact'));
 }
 ?>
@@ -44,9 +44,9 @@ if (function_exists('get_field')) {
                         <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
                 </a>
-                <span class="cta-or"><?php esc_html_e('or', 'flavor-starter'); ?></span>
+                <span class="cta-or"><?php esc_html_e('или', 'flavor-starter'); ?></span>
                 <a href="<?php echo esc_url(get_post_type_archive_link('case')); ?>" class="btn btn-outline btn-xl cta-secondary">
-                    <?php esc_html_e('View Our Work', 'flavor-starter'); ?>
+                    <?php esc_html_e('Наши работы', 'flavor-starter'); ?>
                 </a>
             </div>
 
@@ -57,21 +57,21 @@ if (function_exists('get_field')) {
                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                         <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
-                    <span><?php esc_html_e('Free Consultation', 'flavor-starter'); ?></span>
+                    <span><?php esc_html_e('Бесплатная консультация', 'flavor-starter'); ?></span>
                 </div>
                 <div class="cta-trust__item">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="12" cy="12" r="10"></circle>
                         <polyline points="12 6 12 12 16 14"></polyline>
                     </svg>
-                    <span><?php esc_html_e('Quick Response', 'flavor-starter'); ?></span>
+                    <span><?php esc_html_e('Быстрый ответ', 'flavor-starter'); ?></span>
                 </div>
                 <div class="cta-trust__item">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                         <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                     </svg>
-                    <span><?php esc_html_e('NDA Protected', 'flavor-starter'); ?></span>
+                    <span><?php esc_html_e('Защита NDA', 'flavor-starter'); ?></span>
                 </div>
             </div>
         </div>

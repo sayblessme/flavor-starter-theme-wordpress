@@ -26,7 +26,7 @@
         </div>
 
         <header class="no-results__header">
-            <h1 class="no-results__title"><?php esc_html_e('Nothing Found', 'flavor-starter'); ?></h1>
+            <h1 class="no-results__title"><?php esc_html_e('Ничего не найдено', 'flavor-starter'); ?></h1>
         </header>
 
         <div class="no-results__body">
@@ -36,7 +36,7 @@
                 printf(
                     '<p>' . wp_kses(
                         /* translators: 1: link to WP admin new post page. */
-                        __('Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'flavor-starter'),
+                        __('Готовы опубликовать первую запись? <a href="%1$s">Начните здесь</a>.', 'flavor-starter'),
                         [
                             'a' => [
                                 'href' => [],
@@ -48,14 +48,14 @@
 
             elseif (is_search()) :
             ?>
-                <p><?php esc_html_e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'flavor-starter'); ?></p>
+                <p><?php esc_html_e('К сожалению, по вашему запросу ничего не найдено. Попробуйте изменить ключевые слова.', 'flavor-starter'); ?></p>
 
                 <div class="no-results__suggestions">
-                    <h3><?php esc_html_e('Suggestions:', 'flavor-starter'); ?></h3>
+                    <h3><?php esc_html_e('Рекомендации:', 'flavor-starter'); ?></h3>
                     <ul>
-                        <li><?php esc_html_e('Make sure all words are spelled correctly.', 'flavor-starter'); ?></li>
-                        <li><?php esc_html_e('Try different keywords.', 'flavor-starter'); ?></li>
-                        <li><?php esc_html_e('Try more general keywords.', 'flavor-starter'); ?></li>
+                        <li><?php esc_html_e('Убедитесь, что все слова написаны правильно.', 'flavor-starter'); ?></li>
+                        <li><?php esc_html_e('Попробуйте другие ключевые слова.', 'flavor-starter'); ?></li>
+                        <li><?php esc_html_e('Попробуйте более общие запросы.', 'flavor-starter'); ?></li>
                     </ul>
                 </div>
 
@@ -65,7 +65,7 @@
 
             <?php else : ?>
 
-                <p><?php esc_html_e('It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'flavor-starter'); ?></p>
+                <p><?php esc_html_e('Похоже, мы не можем найти то, что вы ищете. Попробуйте воспользоваться поиском.', 'flavor-starter'); ?></p>
 
                 <div class="no-results__search">
                     <?php get_search_form(); ?>

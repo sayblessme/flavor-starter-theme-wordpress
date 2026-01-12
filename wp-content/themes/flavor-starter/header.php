@@ -14,7 +14,7 @@
 
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#primary">
-        <?php esc_html_e('Skip to content', 'flavor-starter'); ?>
+        <?php esc_html_e('Перейти к содержимому', 'flavor-starter'); ?>
     </a>
 
     <?php
@@ -48,7 +48,7 @@
                     </div>
 
                     <!-- Primary Navigation -->
-                    <nav id="site-navigation" class="main-navigation" aria-label="<?php esc_attr_e('Primary Navigation', 'flavor-starter'); ?>">
+                    <nav id="site-navigation" class="main-navigation" aria-label="<?php esc_attr_e('Основная навигация', 'flavor-starter'); ?>">
                         <?php
                         wp_nav_menu([
                             'theme_location' => 'primary',
@@ -64,7 +64,7 @@
                     <!-- Header Actions -->
                     <div class="header-actions">
                         <!-- Search Toggle -->
-                        <button type="button" class="header-action header-search-toggle" aria-label="<?php esc_attr_e('Toggle search', 'flavor-starter'); ?>" data-search-toggle>
+                        <button type="button" class="header-action header-search-toggle" aria-label="<?php esc_attr_e('Открыть поиск', 'flavor-starter'); ?>" data-search-toggle>
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <circle cx="11" cy="11" r="8"></circle>
                                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -85,11 +85,11 @@
 
                         <!-- CTA Button (Desktop) -->
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="btn btn-primary header-cta">
-                            <?php esc_html_e('Contact Us', 'flavor-starter'); ?>
+                            <?php esc_html_e('Связаться', 'flavor-starter'); ?>
                         </a>
 
                         <!-- Mobile Menu Toggle -->
-                        <button type="button" class="header-action mobile-menu-toggle" aria-label="<?php esc_attr_e('Toggle menu', 'flavor-starter'); ?>" aria-expanded="false" data-mobile-toggle>
+                        <button type="button" class="header-action mobile-menu-toggle" aria-label="<?php esc_attr_e('Открыть меню', 'flavor-starter'); ?>" aria-expanded="false" data-mobile-toggle>
                             <span class="hamburger">
                                 <span class="hamburger-line"></span>
                                 <span class="hamburger-line"></span>
@@ -104,7 +104,7 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
             <div class="mobile-menu__inner">
-                <nav class="mobile-menu__nav" aria-label="<?php esc_attr_e('Mobile Navigation', 'flavor-starter'); ?>">
+                <nav class="mobile-menu__nav" aria-label="<?php esc_attr_e('Мобильная навигация', 'flavor-starter'); ?>">
                     <?php
                     wp_nav_menu([
                         'theme_location' => 'mobile',
@@ -133,7 +133,7 @@
                             <circle cx="20" cy="21" r="1"></circle>
                             <path d="m1 1 4 4 2 14h13l3-9H6"></path>
                         </svg>
-                        <span><?php esc_html_e('Cart', 'flavor-starter'); ?></span>
+                        <span><?php esc_html_e('Корзина', 'flavor-starter'); ?></span>
                         <span class="mobile-menu__cart-count">(<?php echo WC()->cart->get_cart_contents_count(); ?>)</span>
                     </a>
                 </div>
@@ -141,7 +141,7 @@
 
                 <div class="mobile-menu__cta">
                     <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="btn btn-primary btn-lg w-full">
-                        <?php esc_html_e('Contact Us', 'flavor-starter'); ?>
+                        <?php esc_html_e('Связаться', 'flavor-starter'); ?>
                     </a>
                 </div>
 
@@ -181,7 +181,7 @@
     <div class="search-modal" id="search-modal" data-search-modal>
         <div class="search-modal__overlay" data-search-close></div>
         <div class="search-modal__content">
-            <button type="button" class="search-modal__close" aria-label="<?php esc_attr_e('Close search', 'flavor-starter'); ?>" data-search-close>
+            <button type="button" class="search-modal__close" aria-label="<?php esc_attr_e('Закрыть поиск', 'flavor-starter'); ?>" data-search-close>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -189,10 +189,10 @@
             </button>
             <form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
                 <label class="search-form__label">
-                    <span class="sr-only"><?php esc_html_e('Search for:', 'flavor-starter'); ?></span>
+                    <span class="sr-only"><?php esc_html_e('Искать:', 'flavor-starter'); ?></span>
                     <input type="search"
                            class="search-form__input"
-                           placeholder="<?php esc_attr_e('Type to search...', 'flavor-starter'); ?>"
+                           placeholder="<?php esc_attr_e('Введите запрос...', 'flavor-starter'); ?>"
                            value="<?php echo get_search_query(); ?>"
                            name="s"
                            autocomplete="off"
@@ -203,11 +203,11 @@
                         <circle cx="11" cy="11" r="8"></circle>
                         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                     </svg>
-                    <span class="sr-only"><?php esc_html_e('Search', 'flavor-starter'); ?></span>
+                    <span class="sr-only"><?php esc_html_e('Поиск', 'flavor-starter'); ?></span>
                 </button>
             </form>
             <div class="search-modal__hint">
-                <?php esc_html_e('Press ESC to close', 'flavor-starter'); ?>
+                <?php esc_html_e('Нажмите ESC для закрытия', 'flavor-starter'); ?>
             </div>
         </div>
     </div>

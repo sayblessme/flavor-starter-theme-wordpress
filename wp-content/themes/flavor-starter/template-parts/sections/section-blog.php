@@ -22,15 +22,15 @@ if (!$posts->have_posts()) {
     <div class="container">
         <div class="blog-header">
             <div class="section-header text-left fade-in">
-                <span class="section-label"><?php esc_html_e('From the Blog', 'flavor-starter'); ?></span>
-                <h2 class="section-title"><?php esc_html_e('Latest Articles', 'flavor-starter'); ?></h2>
+                <span class="section-label"><?php esc_html_e('Блог', 'flavor-starter'); ?></span>
+                <h2 class="section-title"><?php esc_html_e('Последние статьи', 'flavor-starter'); ?></h2>
                 <p class="section-description">
-                    <?php esc_html_e('Insights, tutorials, and industry news to help you stay ahead.', 'flavor-starter'); ?>
+                    <?php esc_html_e('Полезные статьи, руководства и новости отрасли.', 'flavor-starter'); ?>
                 </p>
             </div>
             <div class="blog-header__cta fade-in">
                 <a href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>" class="btn btn-outline">
-                    <?php esc_html_e('View All Posts', 'flavor-starter'); ?>
+                    <?php esc_html_e('Все статьи', 'flavor-starter'); ?>
                     <?php echo flavor_icon('arrow-right', 18); ?>
                 </a>
             </div>
@@ -80,7 +80,7 @@ if (!$posts->have_posts()) {
                                 <?php echo esc_html(flavor_reading_time()); ?>
                             </span>
                         </div>
-                        <a href="<?php the_permalink(); ?>" class="post-card__link" aria-label="<?php esc_attr_e('Read more', 'flavor-starter'); ?>">
+                        <a href="<?php the_permalink(); ?>" class="post-card__link" aria-label="<?php esc_attr_e('Читать далее', 'flavor-starter'); ?>">
                             <?php echo flavor_icon('arrow-right', 18); ?>
                         </a>
                     </div>
