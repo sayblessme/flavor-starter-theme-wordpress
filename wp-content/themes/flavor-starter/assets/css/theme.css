@@ -3327,7 +3327,7 @@
 
 .service-cta__description {
     font-size: var(--text-lg);
-    opacity: 0.9;
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: var(--space-8);
 }
 
