@@ -51,30 +51,30 @@ get_header();
 
                             <?php if ($client) : ?>
                                 <div class="case-hero__meta-item">
-                                    <span class="case-hero__meta-label"><?php esc_html_e('Client', 'flavor-starter'); ?></span>
+                                    <span class="case-hero__meta-label"><?php esc_html_e('Клиент', 'flavor-starter'); ?></span>
                                     <span class="case-hero__meta-value"><?php echo esc_html($client); ?></span>
                                 </div>
                             <?php endif; ?>
 
                             <?php if ($date) : ?>
                                 <div class="case-hero__meta-item">
-                                    <span class="case-hero__meta-label"><?php esc_html_e('Date', 'flavor-starter'); ?></span>
+                                    <span class="case-hero__meta-label"><?php esc_html_e('Дата', 'flavor-starter'); ?></span>
                                     <span class="case-hero__meta-value"><?php echo esc_html($date); ?></span>
                                 </div>
                             <?php endif; ?>
 
                             <?php if ($services) : ?>
                                 <div class="case-hero__meta-item">
-                                    <span class="case-hero__meta-label"><?php esc_html_e('Services', 'flavor-starter'); ?></span>
+                                    <span class="case-hero__meta-label"><?php esc_html_e('Услуги', 'flavor-starter'); ?></span>
                                     <span class="case-hero__meta-value"><?php echo esc_html($services); ?></span>
                                 </div>
                             <?php endif; ?>
 
                             <?php if ($website) : ?>
                                 <div class="case-hero__meta-item">
-                                    <span class="case-hero__meta-label"><?php esc_html_e('Website', 'flavor-starter'); ?></span>
+                                    <span class="case-hero__meta-label"><?php esc_html_e('Сайт', 'flavor-starter'); ?></span>
                                     <a href="<?php echo esc_url($website); ?>" class="case-hero__meta-link" target="_blank" rel="noopener">
-                                        <?php esc_html_e('Visit Site', 'flavor-starter'); ?>
+                                        <?php esc_html_e('Перейти на сайт', 'flavor-starter'); ?>
                                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                             <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
                                         </svg>
@@ -105,7 +105,7 @@ get_header();
                             if ($overview) :
                             ?>
                                 <div class="case-section">
-                                    <h2 class="case-section__title"><?php esc_html_e('Overview', 'flavor-starter'); ?></h2>
+                                    <h2 class="case-section__title"><?php esc_html_e('Обзор', 'flavor-starter'); ?></h2>
                                     <div class="case-section__content">
                                         <?php echo wp_kses_post($overview); ?>
                                     </div>
@@ -117,7 +117,7 @@ get_header();
                             if ($challenge) :
                             ?>
                                 <div class="case-section">
-                                    <h2 class="case-section__title"><?php esc_html_e('The Challenge', 'flavor-starter'); ?></h2>
+                                    <h2 class="case-section__title"><?php esc_html_e('Задача', 'flavor-starter'); ?></h2>
                                     <div class="case-section__content">
                                         <?php echo wp_kses_post($challenge); ?>
                                     </div>
@@ -129,7 +129,7 @@ get_header();
                             if ($solution) :
                             ?>
                                 <div class="case-section">
-                                    <h2 class="case-section__title"><?php esc_html_e('The Solution', 'flavor-starter'); ?></h2>
+                                    <h2 class="case-section__title"><?php esc_html_e('Решение', 'flavor-starter'); ?></h2>
                                     <div class="case-section__content">
                                         <?php echo wp_kses_post($solution); ?>
                                     </div>
@@ -153,7 +153,7 @@ get_header();
                             if ($results) :
                             ?>
                                 <div class="case-results">
-                                    <h3 class="case-results__title"><?php esc_html_e('Results', 'flavor-starter'); ?></h3>
+                                    <h3 class="case-results__title"><?php esc_html_e('Результаты', 'flavor-starter'); ?></h3>
                                     <div class="case-results__list">
                                         <?php foreach ($results as $result) : ?>
                                             <div class="case-results__item">
@@ -198,7 +198,7 @@ get_header();
             ?>
                 <section class="case-gallery section section--gray">
                     <div class="container">
-                        <h2 class="section-title"><?php esc_html_e('Project Gallery', 'flavor-starter'); ?></h2>
+                        <h2 class="section-title"><?php esc_html_e('Галерея проекта', 'flavor-starter'); ?></h2>
                         <div class="case-gallery__grid">
                             <?php foreach ($gallery as $image) : ?>
                                 <a href="<?php echo esc_url($image['url']); ?>" class="case-gallery__item" data-lightbox="case-gallery">
@@ -229,7 +229,7 @@ get_header();
             ?>
                 <section class="related-cases section">
                     <div class="container">
-                        <h2 class="section-title"><?php esc_html_e('Related Projects', 'flavor-starter'); ?></h2>
+                        <h2 class="section-title"><?php esc_html_e('Похожие проекты', 'flavor-starter'); ?></h2>
                         <div class="portfolio__grid">
                             <?php
                             while ($related_cases->have_posts()) :
@@ -258,7 +258,7 @@ get_header();
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M19 12H5M12 19l-7-7 7-7"/>
                                     </svg>
-                                    <?php esc_html_e('Previous Project', 'flavor-starter'); ?>
+                                    <?php esc_html_e('Предыдущий проект', 'flavor-starter'); ?>
                                 </span>
                                 <span class="case-navigation__title"><?php echo esc_html($prev_post->post_title); ?></span>
                             </a>
@@ -269,7 +269,7 @@ get_header();
                         <?php if ($next_post) : ?>
                             <a href="<?php echo esc_url(get_permalink($next_post)); ?>" class="case-navigation__link case-navigation__link--next">
                                 <span class="case-navigation__label">
-                                    <?php esc_html_e('Next Project', 'flavor-starter'); ?>
+                                    <?php esc_html_e('Следующий проект', 'flavor-starter'); ?>
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M5 12h14M12 5l7 7-7 7"/>
                                     </svg>
