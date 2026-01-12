@@ -1274,8 +1274,36 @@
 }
 
 /* ==========================================================================
+   SECTION DARK VARIANT
+   ========================================================================== */
+.section--dark {
+    background: linear-gradient(135deg, var(--color-gray-900) 0%, var(--color-gray-800) 100%);
+    color: var(--color-white);
+}
+
+/* ==========================================================================
    CTA SECTION
    ========================================================================== */
+.cta {
+    padding: var(--space-20) 0;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta.section--dark {
+    background: linear-gradient(135deg, var(--color-gray-900) 0%, var(--color-gray-800) 100%);
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.1) 1px, transparent 0);
+    background-size: 40px 40px;
+    pointer-events: none;
+}
+
 .cta-section {
     position: relative;
     overflow: hidden;
