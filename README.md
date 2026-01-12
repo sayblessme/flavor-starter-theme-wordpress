@@ -223,6 +223,62 @@ The theme uses a component-based CSS architecture with:
 4. Install ACF and WooCommerce plugins
 5. Import demo content (if available)
 
+## Deployment
+
+### Quick Deployment to Hosting
+
+1. **Upload via FTP**
+   ```bash
+   # Upload WordPress files to your hosting
+   lftp -e "mirror -R /local/path/to/wordpress /www/your-domain.com" ftp://user@host
+   ```
+
+2. **Configure Database**
+   - Create MySQL database on hosting
+   - Update `wp-config.php` with database credentials:
+   ```php
+   define('DB_NAME', 'your_database');
+   define('DB_USER', 'your_user');
+   define('DB_PASSWORD', 'your_password');
+   define('DB_HOST', 'localhost');
+   ```
+
+3. **Run Demo Content Setup**
+   - Upload `flavor-demo-content.php` to site root
+   - Access: `https://your-domain.com/flavor-demo-content.php?key=flavor_demo_2026`
+   - Delete the script after execution
+
+4. **Configure WooCommerce**
+   - Go to WooCommerce > Settings
+   - Disable "Coming Soon" mode if enabled
+   - Set currency and other preferences
+
+### Demo Content Generator
+
+The theme includes a demo content generator script (`/tmp/flavor-demo-content.php`) that creates:
+
+- **12 Pages**: Home, About, Services, Portfolio, Blog, Contact, Shop, Cart, Checkout, My Account, Privacy Policy, Terms of Service
+- **8 Services**: Web Development, Mobile Development, UI/UX Design, Branding, Digital Marketing, SEO, E-commerce, Technical Support
+- **10 Portfolio Cases**: With categories (Web Design, Mobile Apps, Branding)
+- **6 Testimonials**: Client quotes with ratings
+- **6 Team Members**: With positions
+- **6 FAQ Items**: Common questions
+- **12 Blog Posts**: Across 3 categories (Design, Development, Marketing)
+- **24+ WooCommerce Products**: Including 3 variable products
+
+### Production Checklist
+
+- [ ] Update `wp-config.php` with production settings
+- [ ] Set `WP_DEBUG` to `false`
+- [ ] Configure SSL certificate
+- [ ] Set up caching (WP Super Cache, W3 Total Cache)
+- [ ] Configure email settings
+- [ ] Update site URL in Settings > General
+- [ ] Generate sitemap (via Yoast SEO or similar)
+- [ ] Test all forms
+- [ ] Verify WooCommerce checkout works
+- [ ] Delete setup/demo scripts
+
 ### File Watchers
 
 The theme uses vanilla CSS and JavaScript without build tools. For development, use your IDE's built-in file watching or a tool like Live Server.
