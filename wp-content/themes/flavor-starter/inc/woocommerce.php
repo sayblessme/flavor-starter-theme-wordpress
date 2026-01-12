@@ -11,6 +11,23 @@ if (!defined('ABSPATH')) {
 }
 
 /**
+ * Disable WooCommerce Coming Soon / Launch Your Store mode
+ * This ensures the shop is always accessible
+ */
+add_filter('woocommerce_coming_soon_exclude', '__return_true', 9999);
+add_filter('woocommerce_is_coming_soon', '__return_false', 9999);
+
+// Force disable coming soon via options
+add_action('init', function() {
+    if (get_option('woocommerce_coming_soon') !== 'no') {
+        update_option('woocommerce_coming_soon', 'no');
+    }
+    if (get_option('woocommerce_store_pages_only') !== 'no') {
+        update_option('woocommerce_store_pages_only', 'no');
+    }
+}, 1);
+
+/**
  * Remove default WooCommerce styles
  */
 add_filter('woocommerce_enqueue_styles', '__return_empty_array');
