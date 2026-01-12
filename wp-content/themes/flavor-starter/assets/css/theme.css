@@ -962,13 +962,12 @@
     flex-direction: column;
     justify-content: flex-end;
     padding: var(--space-6);
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
-    opacity: 0;
-    transition: opacity var(--transition-base);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 40%, transparent 100%);
+    transition: background var(--transition-base);
 }
 
 .portfolio-card:hover .portfolio-card__overlay {
-    opacity: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .portfolio-card__title {
@@ -987,6 +986,14 @@
 .portfolio-card__actions {
     display: flex;
     gap: var(--space-3);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all var(--transition-base);
+}
+
+.portfolio-card:hover .portfolio-card__actions {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .portfolio-card__action {
