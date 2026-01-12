@@ -25,7 +25,7 @@
         $header_classes[] = 'is-sticky';
     }
 
-    if (is_front_page() && get_theme_mod('flavor_transparent_header', true)) {
+    if (is_front_page() && get_theme_mod('flavor_transparent_header', false)) {
         $header_classes[] = 'is-transparent';
     }
     ?>
